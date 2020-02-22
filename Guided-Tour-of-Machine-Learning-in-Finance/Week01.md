@@ -200,3 +200,45 @@ Action : Decision-making in banking
 - We saw that in Finance, perception tasks might involve elements of RL. This is unlike typical perception tasks for ML in Tech
   - This happens because some perception tasks in Finance involve predicting future actions of rational (or semi-rational) actors, or own actions (like e.g. with American options)
   - Moreover the fact that the reinforcement learning appears as a methods of choice for both perception and action tasks in Finance unlike Tech
+
+### ML in Tech vs ML for Funance
+
+Bigdata?
+
+- ML in Tech : typically yes
+- ML for Finance : typically no(except HFT - High Frequency Trading)
+
+Stationary data?
+
+- ML in Tech : Typically yes
+- ML for Finance : Most often no
+  - It means collecting more data even, when possible, is not always helpful
+
+Noise-to-signal ratio
+
+- ML in Tech : Typically low
+- ML for Finance : Typically high
+  - Financial data are typically quite noisy
+  - "True" signals are unobservable
+  - Therefore noise filtering is one of the most important components of many financial models
+
+Action (RL) tasks : Reinforcement learning in tech and finance
+
+- ML in Tech (고려해야 할 것이 상대적으로 적음) 
+  - Low dimensional state-action space, low uncertainty 
+  - Dimensionality of the state-action space is usually in hundreds.
+  - The action space is often discrete (except in robotics).
+  - Uncertainty is low to moderate (think self-driving cars!)
+- ML for Finance (고려해야 할것이 매우 많음 - 불확실성이 매우 큼)
+  - High-dimensional state-action space, High uncertainty
+  - Dimensionality of the state-action space is often in thousands.
+  - The action space is usually continuous.
+  - Uncertainty is high (think Brexit!)
+
+Interpretability(해석가능성) of results
+
+- ML in Tech
+  - Typically not important or not the main focus
+  - 뉴런넷의  결과에 만관심을 가짐
+- ML for Finance
+  - Typically, either desired or required
