@@ -98,3 +98,17 @@ This can be expressed as a recursive relation for $$B_t$$ at any time $$t < T$$ 
 $$
 B_t = e^{-r\Delta t}[B_{t+1} + (u_{t+1} - u_t)S_{t+1}], t = T-1, ...,0
 $$
+
+## Discrete Time BSM BS Limit
+
+### Hedging and Pricing in the BS Limit
+
+The framework presented above provides a smooth transition to the strict BS limit $$\Delta t \rightarrow 0$$.
+
+- In this limit, the BSM model dynamics under the physical measure $$\mathbb{P}$$ is described by a continous-time Geometric Brownian motion with a drift $$\mu$$ and volatility $$\sigma$$:
+
+$$
+\frac{dS_t}{S_t} = \mu dt + \sigma dW_t
+$$
+
+- where $$W_t$$ is a standard Brownian motion
